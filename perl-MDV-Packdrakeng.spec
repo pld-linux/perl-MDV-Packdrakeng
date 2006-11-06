@@ -15,6 +15,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/R/RG/RGARCIA/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	08fa89a1908503a82abee649d7547f95
+URL:		http://search.cpan.org/dist/MDV-Packdrakeng/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with autodeps}
 BuildRequires:	perl-Compress-Zlib
