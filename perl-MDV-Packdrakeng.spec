@@ -7,7 +7,7 @@
 %define		pnam	Packdrakeng
 %define		pdir	MDV
 Summary:	MDV::Packdrakeng - simple archive extractor/builder
-Summary(pl.UTF-8):   MDV::Packdrakeng - prosta rozpakowywarka archiwów/builder
+Summary(pl.UTF-8):	MDV::Packdrakeng - prosta rozpakowywarka archiwów/builder
 Name:		perl-MDV-Packdrakeng
 Version:	1.01
 Release:	1
