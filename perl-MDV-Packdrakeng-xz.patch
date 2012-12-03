@@ -1,0 +1,22 @@
+diff -urN MDV-Packdrakeng-1.13/lib/MDV/Packdrakeng.pm trunk/lib/MDV/Packdrakeng.pm
+--- MDV-Packdrakeng-1.13/lib/MDV/Packdrakeng.pm	2007-08-09 13:45:44.000000000 +0200
++++ trunk/lib/MDV/Packdrakeng.pm	2012-12-03 13:03:18.707594579 +0100
+@@ -148,6 +148,9 @@
+             };
+         }
+     };
++    $test_method =~ m/^xz|^unxz/ and do {
++        $pack->{compress_method} ||= "xz";
++    };
+     if (!$pack->{noargs}) {
+         $pack->{uncompress_method} ||= "$pack->{compress_method} -d";
+         $pack->{compress_method} = $pack->{compress_method} ? "$pack->{compress_method} -$pack->{level}" : "";
+diff -urN MDV-Packdrakeng-1.13/Makefile.PL trunk/Makefile.PL
+--- MDV-Packdrakeng-1.13/Makefile.PL	2007-06-05 00:32:44.000000000 +0200
++++ trunk/Makefile.PL	2012-12-03 13:03:18.710927913 +0100
+@@ -18,4 +18,5 @@
+ WriteMakefile(
+     NAME	 => 'MDV::Packdrakeng',
+     VERSION_FROM => 'lib/MDV/Packdrakeng.pm',
++    dist	=> { COMPRESS => "xz -f", SUFFIX => ".xz" },
+ );
