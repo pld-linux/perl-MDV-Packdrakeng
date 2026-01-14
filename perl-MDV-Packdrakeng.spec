@@ -9,7 +9,7 @@ Summary:	MDV::Packdrakeng - simple archive extractor/builder
 Summary(pl.UTF-8):	MDV::Packdrakeng - prosta rozpakowywarka archiwów/builder
 Name:		perl-MDV-Packdrakeng
 Version:	1.13
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/N/NA/NANARDON/%{pdir}-%{pnam}-%{version}.tar.gz
